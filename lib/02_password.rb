@@ -36,10 +36,12 @@ puts signup
 login = gets.chomp.to_i
 
 
-if login == signup
+loop do
+     if login == signup
     break puts login
 else
     puts  signup  
 end 
-    
-     
+end
+
+
