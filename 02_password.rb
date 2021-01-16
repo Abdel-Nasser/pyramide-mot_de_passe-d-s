@@ -22,18 +22,23 @@ L'écran d'accueil va dire à l'utilisateur qu'il est bienvenu dans sa zone secr
 Maintenant englobe l'exécution de chaque méthode dans une méthode perform qui va appeler chaque morceau de code dans le bon ordre.
 =end
 
-puts "Bonjour rentrez votre mot de passe!"
+puts "bonjour rentrer votre mot de passe!"
 print ">"
 signup = gets.chomp.to_i
-puts signup
-
-login = gets.chomp.to_i
-
+login = nil 
 
 loop do
-     if login == signup
-    break puts login
-else
-    puts  signup  
-end 
+    
+    if signup != login
+
+        login = gets.chomp.to_i
+        
+    elsif signup == login
+
+        puts " bienvenue dans l'univers des licornes pauvre con!!!!!!"
+
+        
+        break
+
+    end
 end
