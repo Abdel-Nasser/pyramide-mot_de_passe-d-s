@@ -1,4 +1,3 @@
-
 step  = 0
 tour = 0
 
@@ -23,7 +22,7 @@ puts "vous étes à cette marche: |__"
         puts "vous avez monter d'une marches!"
        puts "  |__"
      puts " __"
-     step +=1
+     step = step + 1
      user = gets.chomp.to_i
      print ">"
 
@@ -34,7 +33,7 @@ puts "vous étes à cette marche: |__"
        puts "vous reculer d'une marches!"
        puts   "__"
      puts " |__"
-     step -=1
+     step = step - 1
      user = gets.chomp.to_i
      print ">"
 
@@ -45,30 +44,34 @@ puts "vous étes à cette marche: |__"
         user = gets.chomp.to_i
         print ">"
 
-    
+    end
     
 
-    else 
+    else        
   puts "bravo vous pouvez voir la tour eiffel de cette étage!!!! #{step}"
            puts "woahhhhh"
-puts "          |__"    +        " | "
-puts "         __"     +         " | "
-puts "        __"      +         " | "
-puts "       __"      +          " | "
-puts "      __"       +          "_|_ "
-puts "     __"       +         "|"   "|"
-puts "    __"       +          "|"   "|"
-puts "   __"       +          "|"      "|"
-puts "  __"       +          "|"        "|"
-puts " __"       +          "|"          "|"
 
-       break
+           puts "          |__"           
+           puts "         __"           
+           puts "        __"             
+           puts "       __"              
+           puts "      __"               
+           puts "     __"                
+           puts "    __"                
+           puts "   __"                
+           puts "  __"                 
+           puts " __"                
+           
+
+        break
 
     
-    end
-        
+    
 
   end 
 
-end  
+end
+  
+
+     
   
